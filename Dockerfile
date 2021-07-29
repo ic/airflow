@@ -33,7 +33,7 @@
 #                        all the build essentials. This makes the image
 #                        much smaller.
 #
-ARG AIRFLOW_VERSION="2.0.2"
+ARG AIRFLOW_VERSION="2.1.2"
 ARG AIRFLOW_EXTRAS="async,amazon,celery,cncf.kubernetes,docker,dask,elasticsearch,ftp,grpc,hashicorp,http,ldap,google,microsoft.azure,mysql,postgres,redis,sendgrid,sftp,slack,ssh,statsd,virtualenv"
 ARG ADDITIONAL_AIRFLOW_EXTRAS=""
 ARG ADDITIONAL_PYTHON_DEPS=""
@@ -42,9 +42,9 @@ ARG AIRFLOW_HOME=/opt/airflow
 ARG AIRFLOW_UID="50000"
 ARG AIRFLOW_GID="50000"
 
-ARG PYTHON_BASE_IMAGE="python:3.6-slim-buster"
+ARG PYTHON_BASE_IMAGE="python:3.9-slim-buster"
 
-ARG AIRFLOW_PIP_VERSION=21.1.2
+ARG AIRFLOW_PIP_VERSION=21.2.1
 
 # By default PIP has progress bar but you can disable it.
 ARG PIP_PROGRESS_BAR="on"
